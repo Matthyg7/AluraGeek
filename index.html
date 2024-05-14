@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <title>Mi Aplicación</title>
+    <!-- Enlaces a archivos de estilo -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/flexbox.css" />
+    <!-- Fuente Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="/imagenes/mg_negro.png" alt="logo" />
+      </div>
+      <!-- Título -->
+      <div class="titulo">
+        <!-- Íconos -->
+        <img src="/imagenes/corazon.png" alt="" />
+        <img src="/imagenes/corazon.png" alt="" />
+        <img src="/imagenes/medio-corazon.png" alt="" />
+        <!-- Nombre -->
+        <h1>AluraGeek</h1>
+      </div>
+      <!-- Navegación  -->
+      <nav class="nav">
+        <ul class="nav-menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main class="main-container">
+      <!-- Sección de productos -->
+      <section class="product-section">
+        <!-- Título -->
+        <h1>Mis Productos</h1>
+        <!-- Contenedor de productos -->
+        <div class="productos">
+          <!-- Tarjetas de productos -->
+          <div class="card" data-card>
+            <p class="no-products-message">No se han agregado productos</p>
+          </div>
+        </div>
+      </section>
+      <!-- Sección de formulario -->
+      <section class="form-section">
+        <!-- Título -->
+        <h1>Agregar Producto</h1>
+        <!-- Formulario -->
+        <form id="formulario-agregar" data-formulario>
+          <!-- Campo de nombre -->
+          <div class="form-group">
+            <label for="nombre"></label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre..."
+              data-nombre
+            />
+            <div id="mensaje-nombre"></div>
+          </div>
+          <!-- Campo de precio -->
+          <div class="form-group">
+            <label for="precio"></label>
+            <input
+              type="text"
+              id="precio"
+              name="precio"
+              placeholder="Precio..."
+              data-precio
+            />
+            <div id="mensaje-precio"></div>
+          </div>
+          <!-- Campo de imagen -->
+          <div class="form-group">
+            <label for="imagen"></label>
+            <input
+              type="text"
+              id="imagen"
+              name="imagen"
+              placeholder="Imagen (URL)..."
+              data-imagen
+            />
+            <div id="mensaje-imagen"></div>
+          </div>
+          <!-- Botones de formulario -->
+          <div class="form-buttons">
+            <button type="submit">Agregar producto</button>
+            <button type="reset">Limpiar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+      <!-- Contenido del pie de página -->
+      <div class="footer-content">
+        <!-- Logo -->
+        <img src="/imagenes/mg_negro.png" alt="logo" />
+      </div>
+      <div class="logo-footer">
+        <!-- Íconos -->
+        <img src="/imagenes/corazon.png" alt="" />
+        <img src="/imagenes/corazon.png" alt="" />
+        <img src="/imagenes/medio-corazon.png" alt="" />
+        <!-- Nombre de la marca -->
+        <h1>AluraGeek</h1>
+        <!-- Información de desarrollo -->
+        <p>Desarrollado por Gómez, Elías Matías</p>
+        <!-- Derechos de autor -->
+        <p>&copy; 2024 | Para AluraLatam</p>
+      </div>
+    </footer>
+    <!-- Script -->
+    <script type="module" src="/js/listarProductos.js"></script>
+    <script type="module" src="/js/crearProductos.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "productos": [
+    {
+      "id": "Producto-12",
+      "imagen": "https://acdn.mitiendanube.com/stores/841/670/products/spiderman-arana1-edb4d5535af715337816530068321008-1024-1024.webp",
+      "nombre": "TAZON MARVEL SPIDER-MAN",
+      "precio": "5.900"
+    }
+  ]
+}
