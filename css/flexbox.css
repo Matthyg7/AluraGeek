@@ -88,6 +88,7 @@
 
     /* Pie de página */
     .footer-content {
+        justify-content: center;
         align-items: center;
     }
 
