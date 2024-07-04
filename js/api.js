@@ -1,7 +1,7 @@
 // Importar la función fetch para hacer solicitudes HTTP
 async function listarProductos() {
   // Realizar una solicitud GET para obtener la lista de productos desde el servidor
-  const productos = await fetch("http://localhost:3008/productos", {
+  const productos = await fetch("https://my-json-server.typicode.com/Matthyg7/alura-geek-api/productos", {
     method: "GET",
     headers: {
       "Content-type": "application/json",
@@ -21,7 +21,7 @@ async function agregarProducto(imagen, nombre, precio, id) {
   const nuevoId = id.toString().startsWith("Producto-") ? id : `Producto-${id}`;
 
   // Realizar una solicitud POST para agregar el nuevo producto al servidor
-  const productos = await fetch("http://localhost:3008/productos", {
+  const productos = await fetch("https://my-json-server.typicode.com/Matthyg7/alura-geek-api/productos", {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -46,7 +46,7 @@ async function agregarProducto(imagen, nombre, precio, id) {
 async function eliminarProducto(id) {
 
   // Construir la URL del producto a eliminar
-  const url = `http://localhost:3008/productos/${id}`;
+  const url = `https://my-json-server.typicode.com/Matthyg7/alura-geek-api/productos/${id}`;
 
   // Realizar una solicitud DELETE para eliminar el producto del servidor
   const productos = await fetch(url, {
